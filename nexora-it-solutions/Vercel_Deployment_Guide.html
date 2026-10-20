@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vercel Free Hosting Guide | D-Tech Computer System</title>
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: #334155;
+      --accent: #22d3ee;
+      --success: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .guide-container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .header-card {
+      background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 100%);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .logo-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 14px;
+      background: #fff;
+      padding: 4px;
+      object-fit: contain;
+    }
+    .header-card h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.35rem;
+    }
+    .header-card p {
+      color: #bae6fd;
+      font-size: 0.95rem;
+    }
+    .step-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+    .step-badge {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .step-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+    .step-card ol, .step-card ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+      color: #cbd5e1;
+    }
+    .step-card li {
+      margin-bottom: 0.5rem;
+    }
+    .callout {
+      background: rgba(34, 211, 238, 0.1);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #e0f2fe;
+    }
+    .code-box {
+      background: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #38bdf8;
+      margin: 0.5rem 0;
+      overflow-x: auto;
+    }
+    .btn-link {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 600;
+      padding: 0.6rem 1.25rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 0.5rem;
+      transition: background 0.2s;
+    }
+    .btn-link:hover {
+      background: var(--primary-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="guide-container">
+    <!-- Header Card -->
+    <div class="header-card">
+      <img src="assets/images/d-tech-logo.jpg" alt="D-Tech Logo" class="logo-img" />
+      <div>
+        <h1>D-Tech Computer System</h1>
+        <p>Step-by-Step Vercel Hosting Guide (100% Free Forever with Custom Domain & Free SSL)</p>
+      </div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="step-card">
+      <span class="step-badge">Step 1: Sign Up for GitHub</span>
+      <h2 class="step-title">Create a Free GitHub Account & Repository</h2>
+      <ol>
+        <li>Open your browser and navigate to <a href="https://github.com" target="_blank" style="color: var(--accent);">https://github.com</a>.</li>
+        <li>Sign in, or click <strong>Sign Up</strong> if you don't have an account yet.</li>
+        <li>In the top-right corner of GitHub, click the <strong>+</strong> icon &rarr; select <strong>New repository</strong>.</li>
+        <li>Enter Repository name: <code>d-tech-computer-system</code>.</li>
+        <li>Choose <strong>Public</strong> (or Private), then click <strong>Create repository</strong>.</li>
+      </ol>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step-card">
+      <span class="step-badge">Step 2: Upload Files</span>
+      <h2 class="step-title">Upload Website Files to GitHub</h2>
+      <ol>
+        <li>On your newly created GitHub repository page, click the link: <strong>"uploading an existing file"</strong>.</li>
+        <li>Open your folder: <code>d:\Web App\nexora-it-solutions\nexora-it-solutions</code></li>
+        <li>Drag and drop the following files into the GitHub upload area:
+          <ul>
+            <li><code>index.html</code></li>
+            <li><code>vercel.json</code></li>
+            <li><code>css/</code> folder</li>
+            <li><code>js/</code> folder</li>
+            <li><code>assets/</code> folder</li>
+            <li><code>README.md</code></li>
+          </ul>
+        </li>
+        <li>Scroll down and click the green <strong>"Commit changes"</strong> button.</li>
+      </ol>
+      <div class="callout">
+        💡 <strong>Pre-packed ZIP:</strong> A pre-packaged ZIP archive <code>D-Tech-Computer-System-Website.zip</code> has also been generated in your folder containing all required files!
+      </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step-card">
+      <span class="step-badge">Step 3: Deploy on Vercel</span>
+      <h2 class="step-title">Import & Deploy on Vercel (Under 60 Seconds)</h2>
+      <ol>
+        <li>Go to <a href="https://vercel.com" target="_blank" style="color: var(--accent);">https://vercel.com</a>.</li>
+        <li>Click <strong>Log In</strong> &rarr; Choose <strong>Continue with GitHub</strong>.</li>
+        <li>In your Vercel Dashboard, click <strong>"Add New..."</strong> &rarr; select <strong>"Project"</strong>.</li>
+        <li>Under <strong>Import Git Repository</strong>, click <strong>"Import"</strong> next to <code>d-tech-computer-system</code>.</li>
+        <li>Settings check:
+          <ul>
+            <li><strong>Framework Preset:</strong> Other</li>
+            <li><strong>Root Directory:</strong> <code>./</code></li>
+            <li><strong>Build Command:</strong> (Leave blank - static site needs 0 build steps)</li>
+          </ul>
+        </li>
+        <li>Click the big blue <strong>Deploy</strong> button!</li>
+      </ol>
+      <div class="callout">
+        🎉 Within 30 seconds, Vercel will give you a live global link: <code>https://d-tech-computer-system.vercel.app</code> with free automatic HTTPS security!
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step-card">
+      <span class="step-badge">Step 4: Custom Domain (Optional)</span>
+      <h2 class="step-title">Connect Your Custom Domain</h2>
+      <ol>
+        <li>In your Vercel Project Dashboard, click <strong>Settings</strong> &rarr; <strong>Domains</strong>.</li>
+        <li>Enter your domain name (e.g., <code>dtechcomputers.lk</code> or <code>dtech.com</code>) and click <strong>Add</strong>.</li>
+        <li>Vercel will show you the exact DNS records to add at your domain provider (e.g. CNAME or A Record).</li>
+        <li>Once added, Vercel automatically generates a free SSL certificate for your domain within minutes!</li>
+      </ol>
+    </div>
+
+    <div style="text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 2rem;">
+      D-Tech Computer System &bull; WhatsApp: 077 490 6048 &bull; Email: dtechcomputersystem@gmail.com
+    </div>
+  </div>
+
+</body>
+</html>
